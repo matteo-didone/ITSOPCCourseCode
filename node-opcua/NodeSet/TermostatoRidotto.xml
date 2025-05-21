@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:s1="http://yourorganisation.org/Esercizio2/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd">
+    <NamespaceUris>
+        <Uri>http://yourorganisation.org/Esercizio2/</Uri>
+    </NamespaceUris>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Float">i=10</Alias>
+        <Alias Alias="Double">i=11</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="ByteString">i=15</Alias>
+        <Alias Alias="LocalizedText">i=21</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="Argument">i=296</Alias>
+        <Alias Alias="ModalitaTermostatoType">ns=1;i=3003</Alias>
+        <Alias Alias="VelocitaVentole">ns=1;i=3005</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <ua:ModelInfo Tool="UaModeler" Hash="3UmXMHlnNqTULN5v7JEAoQ==" Version="1.7.1"/>
+        </Extension>
+    </Extensions>
+    <UADataType BrowseName="1:ModalitaTermostatoType" NodeId="ns=1;i=3003">
+        <DisplayName>ModalitaTermostatoType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6004</Reference>
+        </References>
+        <Definition Name="1:ModalitaTermostatoType">
+            <Field Value="0" Name="Manuale"/>
+            <Field Value="1" Name="Automatico"/>
+        </Definition>
+    </UADataType>
+    <UAVariable ArrayDimensions="2" BrowseName="EnumStrings" ValueRank="1" NodeId="ns=1;i=6004" ParentNodeId="ns=1;i=3003" DataType="LocalizedText">
+        <DisplayName>EnumStrings</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3003</Reference>
+        </References>
+        <Value>
+            <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Manuale</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Automatico</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </Value>
+    </UAVariable>
+    <UADataType BrowseName="1:VelocitaVentole" NodeId="ns=1;i=3005">
+        <DisplayName>VelocitaVentole</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6030</Reference>
+        </References>
+        <Definition Name="1:VelocitaVentole">
+            <Field Value="0" Name="Bassa"/>
+            <Field Value="1" SymbolicName="Media_Bassa" Name="Media-Bassa"/>
+            <Field Value="2" Name="Media"/>
+            <Field Value="3" SymbolicName="Media_Alta" Name="Media-Alta"/>
+            <Field Value="4" Name="Alta"/>
+        </Definition>
+    </UADataType>
+    <UAVariable ArrayDimensions="5" BrowseName="EnumStrings" ValueRank="1" NodeId="ns=1;i=6030" ParentNodeId="ns=1;i=3005" DataType="LocalizedText">
+        <DisplayName>EnumStrings</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3005</Reference>
+        </References>
+        <Value>
+            <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Bassa</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Media-Bassa</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Media</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Media-Alta</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Alta</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </Value>
+    </UAVariable>
+    <UAVariable ReleaseStatus="Deprecated" SymbolicName="esercizio2_BinarySchema" BrowseName="1:esercizio2" NodeId="ns=1;i=6005" DataType="ByteString">
+        <DisplayName>esercizio2</DisplayName>
+        <Description>Collects the data type descriptions of http://yourorganisation.org/Esercizio2/</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
+        W1hLWluc3RhbmNlIiB4bWxuczpvcGM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9CaW5hc
+        nlTY2hlbWEvIiBEZWZhdWx0Qnl0ZU9yZGVyPSJMaXR0bGVFbmRpYW4iIFRhcmdldE5hbWVzc
+        GFjZT0iaHR0cDovL3lvdXJvcmdhbmlzYXRpb24ub3JnL0VzZXJjaXppbzIvIiB4bWxuczp1Y
+        T0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIgeG1sbnM6dG5zPSJodHRwOi8veW91c
+        m9yZ2FuaXNhdGlvbi5vcmcvRXNlcmNpemlvMi8iPgogPG9wYzpJbXBvcnQgTmFtZXNwYWNlP
+        SJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIi8+CiA8b3BjOkVudW1lcmF0ZWRUeXBlI
+        E5hbWU9Ik1vZGFsaXRhVGVybW9zdGF0b1R5cGUiIExlbmd0aEluQml0cz0iMzIiPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIFZhbHVlPSIwIiBOYW1lPSJNYW51YWxlIi8+CiAgPG9wYzpFb
+        nVtZXJhdGVkVmFsdWUgVmFsdWU9IjEiIE5hbWU9IkF1dG9tYXRpY28iLz4KIDwvb3BjOkVud
+        W1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJWZWxvY2l0YVZlbnRvb
+        GUiIExlbmd0aEluQml0cz0iMzIiPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIFZhbHVlPSIwI
+        iBOYW1lPSJCYXNzYSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIFZhbHVlPSIxIiBOYW1lP
+        SJNZWRpYS1CYXNzYSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIFZhbHVlPSIyIiBOYW1lP
+        SJNZWRpYSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIFZhbHVlPSIzIiBOYW1lPSJNZWRpY
+        S1BbHRhIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgVmFsdWU9IjQiIE5hbWU9IkFsdGEiL
+        z4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgo8L29wYzpUeXBlRGljdGlvbmFyeT4K</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable ReleaseStatus="Deprecated" BrowseName="Deprecated" NodeId="ns=1;i=6007" ParentNodeId="ns=1;i=6005" DataType="Boolean">
+        <DisplayName>Deprecated</DisplayName>
+        <Description>Indicates that all of the DataType definitions represented by the DataTypeDictionaryType are available through a DataTypeDefinition Attribute.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6005</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>true</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable ReleaseStatus="Deprecated" BrowseName="NamespaceUri" NodeId="ns=1;i=6006" ParentNodeId="ns=1;i=6005" DataType="String">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6005</Reference>
+        </References>
+        <Value>
+            <uax:String>http://yourorganisation.org/Esercizio2/</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable ReleaseStatus="Deprecated" SymbolicName="esercizio2_XmlSchema" BrowseName="1:esercizio2" NodeId="ns=1;i=6008" DataType="ByteString">
+        <DisplayName>esercizio2</DisplayName>
+        <Description>Collects the data type descriptions of http://yourorganisation.org/Esercizio2/</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PHhzOnNjaGVtYSB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zO
+        nVhPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvMjAwOC8wMi9UeXBlcy54c2QiIGVsZ
+        W1lbnRGb3JtRGVmYXVsdD0icXVhbGlmaWVkIiB4bWxuczp0bnM9Imh0dHA6Ly95b3Vyb3JnY
+        W5pc2F0aW9uLm9yZy9Fc2VyY2l6aW8yL1R5cGVzLnhzZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
+        HRwOi8veW91cm9yZ2FuaXNhdGlvbi5vcmcvRXNlcmNpemlvMi9UeXBlcy54c2QiPgogPHhzO
+        mltcG9ydCBuYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL
+        1R5cGVzLnhzZCIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iTW9kYWxpdGFUZXJtb3N0YXRvV
+        HlwZSI+CiAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZ
+        XJhdGlvbiB2YWx1ZT0iTWFudWFsZV8wIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ
+        XV0b21hdGljb18xIi8+CiAgPC94czpyZXN0cmljdGlvbj4KIDwveHM6c2ltcGxlVHlwZT4KI
+        Dx4czplbGVtZW50IHR5cGU9InRuczpNb2RhbGl0YVRlcm1vc3RhdG9UeXBlIiBuYW1lPSJNb
+        2RhbGl0YVRlcm1vc3RhdG9UeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mT
+        W9kYWxpdGFUZXJtb3N0YXRvVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVud
+        CB0eXBlPSJ0bnM6TW9kYWxpdGFUZXJtb3N0YXRvVHlwZSIgbmFtZT0iTW9kYWxpdGFUZXJtb
+        3N0YXRvVHlwZSIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1ZSIgbWF4T2NjdXJzPSJ1b
+        mJvdW5kZWQiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplb
+        GVtZW50IHR5cGU9InRuczpMaXN0T2ZNb2RhbGl0YVRlcm1vc3RhdG9UeXBlIiBuYW1lPSJMa
+        XN0T2ZNb2RhbGl0YVRlcm1vc3RhdG9UeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOnNpb
+        XBsZVR5cGUgbmFtZT0iVmVsb2NpdGFWZW50b2xlIj4KICA8eHM6cmVzdHJpY3Rpb24gYmFzZ
+        T0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJCYXNzYV8wIi8+CiAgI
+        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTWVkaWEtQmFzc2FfMSIvPgogICA8eHM6ZW51bWVyY
+        XRpb24gdmFsdWU9Ik1lZGlhXzIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNZWRpY
+        S1BbHRhXzMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJBbHRhXzQiLz4KICA8L3hzO
+        nJlc3RyaWN0aW9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zO
+        lZlbG9jaXRhVmVudG9sZSIgbmFtZT0iVmVsb2NpdGFWZW50b2xlIi8+CiA8eHM6Y29tcGxle
+        FR5cGUgbmFtZT0iTGlzdE9mVmVsb2NpdGFWZW50b2xlIj4KICA8eHM6c2VxdWVuY2U+CiAgI
+        Dx4czplbGVtZW50IHR5cGU9InRuczpWZWxvY2l0YVZlbnRvbGUiIG5hbWU9IlZlbG9jaXRhV
+        mVudG9sZSIgbWluT2NjdXJzPSIwIiBuaWxsYWJsZT0idHJ1ZSIgbWF4T2NjdXJzPSJ1bmJvd
+        W5kZWQiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZ
+        W50IHR5cGU9InRuczpMaXN0T2ZWZWxvY2l0YVZlbnRvbGUiIG5hbWU9Ikxpc3RPZlZlbG9ja
+        XRhVmVudG9sZSIgbmlsbGFibGU9InRydWUiLz4KPC94czpzY2hlbWE+Cg==</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable ReleaseStatus="Deprecated" BrowseName="Deprecated" NodeId="ns=1;i=6010" ParentNodeId="ns=1;i=6008" DataType="Boolean">
+        <DisplayName>Deprecated</DisplayName>
+        <Description>Indicates that all of the DataType definitions represented by the DataTypeDictionaryType are available through a DataTypeDefinition Attribute.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>true</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable ReleaseStatus="Deprecated" BrowseName="NamespaceUri" NodeId="ns=1;i=6009" ParentNodeId="ns=1;i=6008" DataType="String">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
+        </References>
+        <Value>
+            <uax:String>http://yourorganisation.org/Esercizio2/Types.xsd</uax:String>
+        </Value>
+    </UAVariable>
+    <UAObjectType BrowseName="1:TermostatoType" NodeId="ns=1;i=1004">
+        <DisplayName>TermostatoType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7001</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7005</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7004</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6001</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6012</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6011</Reference>
+        </References>
+    </UAObjectType>
+    <UAMethod BrowseName="1:Accendi" NodeId="ns=1;i=7001" ParentNodeId="ns=1;i=1004">
+        <DisplayName>Accendi</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+        </References>
+    </UAMethod>
+    <UAMethod BrowseName="1:ImpostaModalita" NodeId="ns=1;i=7005" ParentNodeId="ns=1;i=1004">
+        <DisplayName>ImpostaModalita</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable ArrayDimensions="1" BrowseName="InputArguments" ValueRank="1" NodeId="ns=1;i=6015" ParentNodeId="ns=1;i=7005" DataType="Argument">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7005</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ModalitaTermostatoType</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=1;i=3003</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAMethod BrowseName="1:ImpostaTemperatura" NodeId="ns=1;i=7004" ParentNodeId="ns=1;i=1004">
+        <DisplayName>ImpostaTemperatura</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable ArrayDimensions="1" BrowseName="InputArguments" ValueRank="1" NodeId="ns=1;i=6014" ParentNodeId="ns=1;i=7004" DataType="Argument">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7004</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Temperatura</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=11</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:Modalita" AccessLevel="3" NodeId="ns=1;i=6003" ParentNodeId="ns=1;i=1004" DataType="ModalitaTermostatoType">
+        <DisplayName>Modalita</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+        </References>
+    </UAVariable>
+    <UAMethod BrowseName="1:Spegni" NodeId="ns=1;i=7002" ParentNodeId="ns=1;i=1004">
+        <DisplayName>Spegni</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable BrowseName="1:Stato" AccessLevel="3" NodeId="ns=1;i=6001" ParentNodeId="ns=1;i=1004" DataType="Boolean">
+        <DisplayName>Stato</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="1:TemperaturaCorrente" AccessLevel="3" NodeId="ns=1;i=6002" ParentNodeId="ns=1;i=1004" DataType="Double">
+        <DisplayName>TemperaturaCorrente</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="1:TemperaturaImpostata" AccessLevel="3" NodeId="ns=1;i=6012" ParentNodeId="ns=1;i=1004" DataType="Float">
+        <DisplayName>TemperaturaImpostata</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="1:VelocitaVentole" AccessLevel="3" NodeId="ns=1;i=6011" ParentNodeId="ns=1;i=1004" DataType="VelocitaVentole">
+        <DisplayName>VelocitaVentole</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="1:Termostato" NodeId="ns=1;i=5003">
+        <DisplayName>Termostato</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1004</Reference>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7009</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7013</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7014</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7016</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6026</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6027</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6028</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6029</Reference>
+        </References>
+    </UAObject>
+    <UAMethod MethodDeclarationId="ns=1;i=7001" BrowseName="1:Accendi" NodeId="ns=1;i=7009" ParentNodeId="ns=1;i=5003">
+        <DisplayName>Accendi</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAMethod>
+    <UAMethod MethodDeclarationId="ns=1;i=7005" BrowseName="1:ImpostaModalita" NodeId="ns=1;i=7013" ParentNodeId="ns=1;i=5003">
+        <DisplayName>ImpostaModalita</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable ArrayDimensions="1" BrowseName="InputArguments" ValueRank="1" NodeId="ns=1;i=6022" ParentNodeId="ns=1;i=7013" DataType="Argument">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7013</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ModalitaTermostatoType</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=1;i=3003</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAMethod MethodDeclarationId="ns=1;i=7004" BrowseName="1:ImpostaTemperatura" NodeId="ns=1;i=7014" ParentNodeId="ns=1;i=5003">
+        <DisplayName>ImpostaTemperatura</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable ArrayDimensions="1" BrowseName="InputArguments" ValueRank="1" NodeId="ns=1;i=6023" ParentNodeId="ns=1;i=7014" DataType="Argument">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7014</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Temperatura</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=11</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:Modalita" AccessLevel="3" NodeId="ns=1;i=6025" ParentNodeId="ns=1;i=5003" DataType="ModalitaTermostatoType">
+        <DisplayName>Modalita</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAMethod MethodDeclarationId="ns=1;i=7002" BrowseName="1:Spegni" NodeId="ns=1;i=7016" ParentNodeId="ns=1;i=5003">
+        <DisplayName>Spegni</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable BrowseName="1:Stato" AccessLevel="3" NodeId="ns=1;i=6026" ParentNodeId="ns=1;i=5003" DataType="Boolean">
+        <DisplayName>Stato</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="1:TemperaturaCorrente" AccessLevel="3" NodeId="ns=1;i=6027" ParentNodeId="ns=1;i=5003" DataType="Double">
+        <DisplayName>TemperaturaCorrente</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="1:TemperaturaImpostata" AccessLevel="3" NodeId="ns=1;i=6028" ParentNodeId="ns=1;i=5003" DataType="Float">
+        <DisplayName>TemperaturaImpostata</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="1:VelocitaVentole" AccessLevel="3" NodeId="ns=1;i=6029" ParentNodeId="ns=1;i=5003" DataType="VelocitaVentole">
+        <DisplayName>VelocitaVentole</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>
